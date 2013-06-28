@@ -16,6 +16,9 @@
 		59C18833177C8CEB0019E0B7 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 59C18832177C8CEB0019E0B7 /* Default.png */; };
 		59C18835177C8CEC0019E0B7 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 59C18834177C8CEC0019E0B7 /* Default@2x.png */; };
 		59C18837177C8CEC0019E0B7 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 59C18836177C8CEC0019E0B7 /* Default-568h@2x.png */; };
+		59C18843177C8D210019E0B7 /* MBSlideCellTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 59C1883E177C8D210019E0B7 /* MBSlideCellTableViewController.m */; };
+		59C18844177C8D210019E0B7 /* MBSlideCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 59C18840177C8D210019E0B7 /* MBSlideCell.m */; };
+		59C18845177C8D210019E0B7 /* MBSlideCellPanGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 59C18842177C8D210019E0B7 /* MBSlideCellPanGestureRecognizer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +35,12 @@
 		59C18832177C8CEB0019E0B7 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		59C18834177C8CEC0019E0B7 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		59C18836177C8CEC0019E0B7 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		59C1883D177C8D210019E0B7 /* MBSlideCellTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBSlideCellTableViewController.h; sourceTree = "<group>"; };
+		59C1883E177C8D210019E0B7 /* MBSlideCellTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBSlideCellTableViewController.m; sourceTree = "<group>"; };
+		59C1883F177C8D210019E0B7 /* MBSlideCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBSlideCell.h; sourceTree = "<group>"; };
+		59C18840177C8D210019E0B7 /* MBSlideCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBSlideCell.m; sourceTree = "<group>"; };
+		59C18841177C8D210019E0B7 /* MBSlideCellPanGestureRecognizer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBSlideCellPanGestureRecognizer.h; sourceTree = "<group>"; };
+		59C18842177C8D210019E0B7 /* MBSlideCellPanGestureRecognizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBSlideCellPanGestureRecognizer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,8 +87,9 @@
 		59C18826177C8CEB0019E0B7 /* MBSlideCell */ = {
 			isa = PBXGroup;
 			children = (
-				59C1882F177C8CEB0019E0B7 /* MBAppDelegate.h */,
-				59C18830177C8CEB0019E0B7 /* MBAppDelegate.m */,
+				59C18848177D4D5F0019E0B7 /* Demo */,
+				59C18847177D4CB30019E0B7 /* MBSlideCell PanGestureRecognizer Subclass */,
+				59C18846177D4CA40019E0B7 /* MBSlideCell */,
 				59C18827177C8CEB0019E0B7 /* Supporting Files */,
 			);
 			path = MBSlideCell;
@@ -97,6 +107,35 @@
 				59C18836177C8CEC0019E0B7 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		59C18846177D4CA40019E0B7 /* MBSlideCell */ = {
+			isa = PBXGroup;
+			children = (
+				59C1883F177C8D210019E0B7 /* MBSlideCell.h */,
+				59C18840177C8D210019E0B7 /* MBSlideCell.m */,
+			);
+			name = MBSlideCell;
+			sourceTree = "<group>";
+		};
+		59C18847177D4CB30019E0B7 /* MBSlideCell PanGestureRecognizer Subclass */ = {
+			isa = PBXGroup;
+			children = (
+				59C18841177C8D210019E0B7 /* MBSlideCellPanGestureRecognizer.h */,
+				59C18842177C8D210019E0B7 /* MBSlideCellPanGestureRecognizer.m */,
+			);
+			name = "MBSlideCell PanGestureRecognizer Subclass";
+			sourceTree = "<group>";
+		};
+		59C18848177D4D5F0019E0B7 /* Demo */ = {
+			isa = PBXGroup;
+			children = (
+				59C1882F177C8CEB0019E0B7 /* MBAppDelegate.h */,
+				59C18830177C8CEB0019E0B7 /* MBAppDelegate.m */,
+				59C1883D177C8D210019E0B7 /* MBSlideCellTableViewController.h */,
+				59C1883E177C8D210019E0B7 /* MBSlideCellTableViewController.m */,
+			);
+			name = Demo;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -167,6 +206,9 @@
 			files = (
 				59C1882D177C8CEB0019E0B7 /* main.m in Sources */,
 				59C18831177C8CEB0019E0B7 /* MBAppDelegate.m in Sources */,
+				59C18843177C8D210019E0B7 /* MBSlideCellTableViewController.m in Sources */,
+				59C18844177C8D210019E0B7 /* MBSlideCell.m in Sources */,
+				59C18845177C8D210019E0B7 /* MBSlideCellPanGestureRecognizer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -7,6 +7,7 @@
 //
 
 #import "MBAppDelegate.h"
+#import "MBSlideCellTableViewController.h"
 
 @implementation MBAppDelegate
 
@@ -14,8 +15,11 @@
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
+    MBSlideCellTableViewController *tableViewController = [MBSlideCellTableViewController.alloc initWithStyle:UITableViewStylePlain];
+    self.window.rootViewController = tableViewController;
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
+    
     return YES;
 }
 
